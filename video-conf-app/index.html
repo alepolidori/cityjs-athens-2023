@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" media="screen">
+  <link rel="stylesheet" href="./client/css/main.css">
+  <title>CityJS</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>CityJS Athens 2023</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="video-container">
+          <div id="remote-video-container" class="video-container">
+            <div class="video-title">Remote</div>
+            <video id="remote-video" autoplay playsinline></video>
+          </div>
+          <div id="local-video-container" class="video-container">
+            <div class="video-title">Local</div>
+            <video id="local-video" autoplay playsinline></video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col">
+        <button id="start-btn" class="btn btn-primary">Start</button>
+      </div>
+    </div>
+  </div>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./node_modules/socket.io/client-dist/socket.io.min.js"></script>
+  <script src="./client/js/ui.js"></script>
+  <script src="./client/js/ws-signaling.js"></script>
+  <script src="./client/js/webrtc.js"></script>
+</body>
+</html>

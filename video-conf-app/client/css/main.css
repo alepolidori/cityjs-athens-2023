@@ -1,0 +1,98 @@
+/* body,html {
+  height: 100%;
+}
+
+.video-box {
+  width: 320px;
+  height: 240px;
+}
+
+.video-size {
+  width: 200px;
+  height: 140px;
+  border: 1px solid black;
+}
+
+.remote-video-size {
+  width: 200px;
+  margin-top: 10px;
+}
+
+.remote-videos-box {
+  height: 60%;
+  overflow-y: auto;
+}
+
+.my-video-box {
+  height: 30%;
+}
+
+.btn-video-box {
+  height: 10%;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-select {
+  width: 200px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+.video-container {
+  position: relative;
+}
+
+#local-video-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 25%; /* Adjust the width as needed */
+  height: auto;
+  border: 2px solid green;
+  z-index: 2;
+  box-shadow: 0 0 20px 10px gray; /* Set shadow color to gray */
+  background-color: lightgray; /* Add gray background */
+}
+#local-video,
+#remote-video {
+  width: 100%; /* Adjust the width as needed */
+  height: 100%;
+}
+
+#local-video-container .video-title {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+#remote-video-container {
+  width: 100%;
+  height: calc(100vh - 200px); /* Adjust the height as needed */
+  border: 2px solid red;
+  box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.5); /* Increased shadow */
+  background-color: black; /* Add black background */
+  position: relative;
+}
+
+#remote-video-container .video-title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
