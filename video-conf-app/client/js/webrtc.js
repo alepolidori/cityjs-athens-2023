@@ -7,7 +7,6 @@ let localStream, remoteStream
 const pcConfig = {
   'iceServers': [
     { 'urls': 'stun:stun.l.google.com:19302' },
-    { 'urls': 'stun:localhost:5349' },
   ]
 }
 
