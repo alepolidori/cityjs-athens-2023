@@ -1,0 +1,11 @@
+body {
+  font-family: sans-serif;
+}
+
+video {
+  width: 640px;
+  height: 480px;
+  /* filter: blur(4px) invert(1) opacity(0.5); */
+  /* filter: hue-rotate(180deg) saturate(200%); */
+  /* filter: grayscale(); */
+}
